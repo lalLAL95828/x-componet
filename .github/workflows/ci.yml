@@ -16,8 +16,8 @@ jobs:
         npm run build-storybook
     # 发布
     - name: Deploy  
-      uses: JamesIves/github-pages-deploy-action@main
-      env:
+      uses: actions/checkout@main
+      with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
         FOLDER: storybook-static
