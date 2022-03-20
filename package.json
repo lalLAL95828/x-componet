@@ -66,5 +66,12 @@
     "sass-loader": "^10.2.1",
     "style-loader": "^2.0.0",
     "typescript": "^4.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lalLAL95828/x-componet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lalLAL95828/x-componet/issues"
   }
 }
