@@ -34,12 +34,17 @@ npm i -D husky
 //解决问题html-webpack-plugin报错，特地升级一下，如果报错，可以不升级
 npm i --save-dev html-webpack-plugin
 
+//判断是否为持续化继承服务器
+npm install is-ci --save
+
 //react-docgen 组件的详细信息（组件参数文档生成器）（新版storybook不用特点下载）
 //npm install --save-dev react-docgen-typescript-loader
 
 //【测试工具】react-test-renderer如何使用，参考react官网（使用不到，可以不下载）
 npm i -D react-test-renderer
 ```
+
+
 
 
 ```js

@@ -6,3 +6,5 @@ jest.config.js
 
 src/stories/
 dist/
+
+storybook-static/
