@@ -1,19 +1,23 @@
-language: node_js
-node_js:
-  - "stable"
-cache:
-  directories:
-  - node_modules
-env:
-  - CI=true
-script:
-  - npm run build-storybook
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $github_token_x-component
-  local_dir: storybook-static
-  on:
-    branch: main
-  
-  
+name: build Home
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+    # 构建和部署
+    - name: Install and Build
+      run: |
+        npm ci
+        npm run build-storybook
+    # 发布
+    - name: Deploy  
+      uses: JamesIves/github-pages-deploy-action@main
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: storybook-static

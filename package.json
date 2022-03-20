@@ -12,6 +12,7 @@
     "UI",
     "React"
   ],
+  "homepage": "https://lalLAL95828.github.io/x-componet",
   "scripts": {
     "postinstall": "is-ci || husky install",
     "test-watch": "jest --watch",
