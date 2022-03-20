@@ -13,6 +13,7 @@
     "React"
   ],
   "scripts": {
+    "prepare": "husky install",
     "test-watch": "jest --watch",
     "test": "jest",
     "clean": "rimraf ./dist",
@@ -23,11 +24,6 @@
     "prepublishOnly": "npm test && npm run lint && npm run build",
     "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test && npm run lint"
-    }
   },
   "author": "x-team-ui",
   "dependencies": {
