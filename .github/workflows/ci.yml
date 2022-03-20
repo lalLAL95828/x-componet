@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@main
+      # 特定的action
+      uses: actions/checkout@v3
     # 构建和部署
     - name: Install and Build
       run: |
@@ -16,7 +17,7 @@ jobs:
         npm run build-storybook
     # 发布
     - name: Deploy  
-      uses: actions/checkout@main
+      uses: JamesIves/github-pages-deploy-action@v4.2.5
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
