@@ -28,6 +28,8 @@ npm i -D rimraf
 //装scss的命令工具
 npm i -D node-sass
 
+//git命令执行前的操作
+npm i -D husky
 
 //解决问题html-webpack-plugin报错，特地升级一下，如果报错，可以不升级
 npm i --save-dev html-webpack-plugin
