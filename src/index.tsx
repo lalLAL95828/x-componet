@@ -1,2 +1,2 @@
-export {default as LALButton} from './components/Button';
+export {default as XInput} from './components/Input';
 
