@@ -24,8 +24,12 @@
     "lint": "eslint --ext js,ts,tsx src --max-warnings 5",
     "prepublishOnly": "npm test && npm run lint && npm run build",
     "storybook": "start-storybook -p 9009",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=0f9aebcea1e0"
   },
+  "files": [
+      "dist"
+  ],
   "author": "x-team-ui",
   "dependencies": {
     "classnames": "^2.3.1",
@@ -53,6 +57,7 @@
     "@typescript-eslint/parser": "^5.15.0",
     "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.3",
+    "chromatic": "^6.5.3",
     "css-loader": "^5.2.7",
     "eslint": "^8.11.0",
     "eslint-plugin-react": "^7.29.4",
