@@ -5,7 +5,7 @@ storiesOf("welcome page",module)
 .add("welcome",()=>{
     return (
         <>
-          <h1>欢迎来到 x-component 组件库</h1>
+          <h1>欢迎来到 xteam-ui 组件库</h1>
           <h3>安装</h3>
           <code>
             npm install catract --save

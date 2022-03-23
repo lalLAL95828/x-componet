@@ -1,7 +1,7 @@
 {
-  "name": "x-component",
+  "name": "xteam-ui",
   "version": "1.0.0",
-  "description": "x-component组件库",
+  "description": "xteam-ui组件库",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
