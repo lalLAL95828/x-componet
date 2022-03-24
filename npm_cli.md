@@ -9,8 +9,6 @@ npm i -D typescript
 npx sb init
 
 
-
-
 //安装scss，如果有报错，请参考官网
 //https://github.com/storybookjs/storybook/issues/16115
 npm install @storybook/preset-scss sass --save-dev
