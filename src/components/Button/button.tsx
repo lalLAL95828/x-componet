@@ -32,11 +32,10 @@ interface BaseButtonProps{
     color?:string,
     /** 使用波纹 */
     // ripple?:boolean | RippleProps
+
 }
 type NativeButtonProps = BaseButtonProps & ButtonHTMLAttributes<HTMLElement>;
 type AnchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>
-
-
 
 
 //Partial所有属性转化成可选

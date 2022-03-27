@@ -6,7 +6,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { action } from '@storybook/addon-actions';
 
-import { Button } from './button';
+import { Button,Buttontype } from './button';
 
 export default {
   /* 👇 The title prop is optional.
@@ -21,7 +21,13 @@ export default {
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} >按钮</Button>;
-export const Primary = Template.bind({});
-Primary.args={
+
+export const Linkbtn = Template.bind({});
+Linkbtn.args={
+  btnType:Buttontype.Link,
+  href:"https://github.com/lalLAL95828/xteam-ui"
 }
+
+export const Primary = Template.bind({});
+Primary.args={}
 

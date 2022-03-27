@@ -8,4 +8,11 @@ export const parameters = {
       date: /Date$/,
     },
   },
+
+  options: {
+    storySort: {
+      //设置按钮的展示顺序
+      order: ['按钮'],
+    },
+  },
 }

@@ -6,7 +6,8 @@ module.exports = {
         "builder": 'webpack5',
     },
     "features": {
-        babelModeV7: true,
+        babelModeV7: true,//使用babel.config.js的模式
+        storyStoreV7: true,//按需加载，启动速度更快
     },
     "stories": [
         "../src/**/*.stories.mdx",
