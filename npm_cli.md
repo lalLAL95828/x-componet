@@ -14,6 +14,8 @@ npx sb init
 npm install @storybook/preset-scss sass --save-dev
 npm i -D css-loader@5 sass-loader@10 style-loader@2
 
+
+
 //安装eslint
 npm install eslint --save-dev
 npx eslint --init
